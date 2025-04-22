@@ -21,7 +21,7 @@ header {
 }
 .nav {
   display: flex;
-  justify-content: center;
+  align-items: center;
   gap: var(--gap);
   padding: var(--gap);
   background: var(--header-bg);
@@ -35,6 +35,14 @@ header {
 }
 .nav a:hover {
   text-decoration: underline;
+}
+/* Logo styling: placed at top-left */
+.logo {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  margin-right: auto;
 }
 .hero {
   text-align: center;
