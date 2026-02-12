@@ -23,7 +23,7 @@ header {
   display: flex;
   align-items: center;
   gap: var(--gap);
-  padding: var(--gap);
+  padding: 0.25rem var(--gap) var(--gap);
   background: var(--header-bg);
   list-style: none;
 }
@@ -46,10 +46,11 @@ header {
 }
 .hero {
   text-align: center;
-  padding: 2rem var(--gap);
+  padding: 0.1rem var(--gap) 2rem;
 }
 .hero h1 {
   font-size: clamp(2rem, 5vw, 2.5rem);
+  margin-top: 0;
   margin-bottom: 0.5rem;
 }
 .hero p {
@@ -82,10 +83,12 @@ h2 {
   background: var(--header-bg);
   padding: var(--gap);
   border-radius: 0.5rem;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  will-change: transform;
 }
 .project:hover {
   transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 .project__title {
   display: block;
@@ -116,7 +119,7 @@ footer {
 }
 .heart {
   display: inline-block;
-  color: red;
+  color: #c0392b;
   font-size: 1em;
   animation: pulse 1s infinite;
   margin: 0 0.25em;

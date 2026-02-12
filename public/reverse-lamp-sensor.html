@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reverse Lamp Sensor – Jackson O'Brien</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo">JTOBRIEN</a>
+      <a href="work.html">Work</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+    <div class="hero">
+      <h1>Reverse Lamp Sensor</h1>
+      <p>Custom hardware to automatically trigger reverse lights on an older vehicle.</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>The Problem</h2>
+      <p>Older vehicles often lack the wiring infrastructure to support modern reverse lights or backup cameras. Rather than doing a full wiring overhaul, I designed a small sensor module that detects when the transmission is shifted into reverse and automatically triggers the reverse lamps—no factory wiring required.</p>
+    </section>
+
+    <section>
+      <h2>How It Works</h2>
+      <p>The sensor monitors the transmission output using a hall-effect sensor to detect rotational direction. When reverse rotation is detected, it sends a signal to a relay that switches the reverse lights on. The whole circuit is self-contained, runs off the vehicle's 12V system, and is fused for protection.</p>
+    </section>
+
+    <section>
+      <h2>Build & Installation</h2>
+      <p>The circuit was prototyped on a breadboard, then soldered onto a compact perfboard and heat-shrink wrapped for weatherproofing. Installation took about two hours—tucked behind the dash with a single tap into the fuse box for power.</p>
+    </section>
+
+    <section>
+      <h2>Next Steps</h2>
+      <p>A future revision may include a small PCB to replace the perfboard, and I'd like to add a backup camera trigger output so the same sensor can wake a rear-view display simultaneously.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with <span class="heart">♥</span> by JTOBRIEN</p>
+    <p>&copy; 2025 Jackson O'Brien</p>
+  </footer>
+</body>
+</html>
